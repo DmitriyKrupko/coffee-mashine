@@ -9,7 +9,7 @@
         boolean isBlocked = false;
 
         int capuccinoMilkRequired = 60;
-        int capuccinoCoffeeRequired = 15;
+        int capuccinoCoffeeRequired = 10;
 
         boolean milkIsEnough = milkAmount >= capuccinoMilkRequired ||
                 skimmedMilkAmount >= capuccinoMilkRequired ||
@@ -36,6 +36,7 @@
 
         if (!hasErrors) {
             System.out.println("Готовим кофе");
+            System.out.println("хорошего дня");
 
         }
 

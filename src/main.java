@@ -1,10 +1,12 @@
 
-жpublic class main {
+public class main {
     public static void main(String[] args) {
         int coffeeAmount = 1;
         int milkAmount = 1;
         int skimmedMilkAmount = 2;
         int noLactoseMilkAmount = 2;
+
+        System.out.println("Приветствую Дмитрий:)");
 
         boolean isBlocked = false;
 

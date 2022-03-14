@@ -32,6 +32,7 @@ public class main {
         if (!milkIsEnough) {
             System.out.println("Молока недостаточно");
             System.out.println("Налей молока, сука!!!");
+            System.out.println("пидор...");
             hasErrors = true;
         }
 

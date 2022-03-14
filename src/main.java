@@ -1,5 +1,5 @@
 
-жpublic class main {
+public class main {
     public static void main(String[] args) {
         int coffeeAmount = 1;
         int milkAmount = 1;
@@ -10,10 +10,12 @@
 
         int capuccinoMilkRequired = 60;
         int capuccinoCoffeeRequired = 15;
+        int capuccinoSkimmedMilkRequired = 50;
 
         boolean milkIsEnough = milkAmount >= capuccinoMilkRequired ||
                 skimmedMilkAmount >= capuccinoMilkRequired ||
-                noLactoseMilkAmount >= capuccinoMilkRequired;
+                noLactoseMilkAmount >= capuccinoMilkRequired ||
+                capuccinoSkimmedMilkRequired >= skimmedMilkAmount;
 
         boolean coffeeIsEnough = coffeeAmount >= capuccinoCoffeeRequired;
 

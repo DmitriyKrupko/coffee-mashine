@@ -9,7 +9,8 @@ public class main {
         boolean isBlocked = false;
 
         int capuccinoMilkRequired = 60;
-        int capuccinoCoffeeRequired = 15;
+
+        int capuccinoCoffeeRequired = 10;
         int capuccinoSkimmedMilkRequired = 50;
 
         boolean milkIsEnough = milkAmount >= capuccinoMilkRequired ||
@@ -38,6 +39,7 @@ public class main {
 
         if (!hasErrors) {
             System.out.println("Готовим кофе");
+            System.out.println("хорошего дня");
 
         }
 

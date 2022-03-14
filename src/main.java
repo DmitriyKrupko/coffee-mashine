@@ -20,7 +20,7 @@
         boolean hasErrors = false;
 
         if (isBlocked) {
-            System.out.println("Кофе-машина заблокированна");
+            System.out.println("Кофе-машина заблокированна:(");
             hasErrors = true;
         }
 

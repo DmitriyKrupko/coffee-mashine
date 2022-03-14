@@ -8,7 +8,7 @@ public class main {
 
         boolean isBlocked = false;
 
-        int capuccinoMilkRequired = 60;
+        int capuccinoMilkRequired = 70;
         int capuccinoCoffeeRequired = 15;
 
         boolean milkIsEnough = milkAmount >= capuccinoMilkRequired ||

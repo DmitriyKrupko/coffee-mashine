@@ -8,10 +8,10 @@ public class main {
 
         boolean isBlocked = false;
 
-        int capuccinoMilkRequired = 60;
-
-        int capuccinoCoffeeRequired = 10;
         int capuccinoSkimmedMilkRequired = 50;
+
+        int capuccinoMilkRequired = 70;
+        int capuccinoCoffeeRequired = 15;
 
         boolean milkIsEnough = milkAmount >= capuccinoMilkRequired ||
                 skimmedMilkAmount >= capuccinoMilkRequired ||
@@ -35,6 +35,8 @@ public class main {
 
         if (!milkIsEnough) {
             System.out.println("Молока недостаточно");
+            System.out.println("Налей молока, сука!!!");
+            System.out.println("пидор...");
             hasErrors = true;
         }
 

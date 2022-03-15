@@ -1,5 +1,5 @@
 
-public class main {
+жpublic class main {
     public static void main(String[] args) {
         int coffeeAmount = 1;
         int milkAmount = 1;
@@ -8,35 +8,29 @@ public class main {
 
         boolean isBlocked = false;
 
-        int capuccinoSkimmedMilkRequired = 50;
-
-        int capuccinoMilkRequired = 70;
-        int capuccinoCoffeeRequired = 15;
+        int capuccinoMilkRequired = 60;
+        int capuccinoCoffeeRequired = 10;
 
         boolean milkIsEnough = milkAmount >= capuccinoMilkRequired ||
                 skimmedMilkAmount >= capuccinoMilkRequired ||
-                noLactoseMilkAmount >= capuccinoMilkRequired ||
-                capuccinoSkimmedMilkRequired >= skimmedMilkAmount;
+                noLactoseMilkAmount >= capuccinoMilkRequired;
 
         boolean coffeeIsEnough = coffeeAmount >= capuccinoCoffeeRequired;
 
         boolean hasErrors = false;
 
         if (isBlocked) {
-            System.out.println("Кофе-машина заблокированна:(");
+            System.out.println("Кофе-машина заблокированна");
             hasErrors = true;
         }
 
         if (!coffeeIsEnough) {
             System.out.println("Кофе недостаточно");
-            System.out.println("Засыпь кофе, придурок");
             hasErrors = true;
         }
 
         if (!milkIsEnough) {
             System.out.println("Молока недостаточно");
-            System.out.println("Налей молока, сука!!!");
-            System.out.println("пидор...");
             hasErrors = true;
         }
 

@@ -1,5 +1,5 @@
 
-жpublic class main {
+public class main {
     public static void main(String[] args) {
         int coffeeAmount = 1;
         int milkAmount = 1;
@@ -9,18 +9,21 @@
         boolean isBlocked = false;
 
         int capuccinoMilkRequired = 60;
+
         int capuccinoCoffeeRequired = 10;
+        int capuccinoSkimmedMilkRequired = 50;
 
         boolean milkIsEnough = milkAmount >= capuccinoMilkRequired ||
                 skimmedMilkAmount >= capuccinoMilkRequired ||
-                noLactoseMilkAmount >= capuccinoMilkRequired;
+                noLactoseMilkAmount >= capuccinoMilkRequired ||
+                capuccinoSkimmedMilkRequired >= skimmedMilkAmount;
 
         boolean coffeeIsEnough = coffeeAmount >= capuccinoCoffeeRequired;
 
         boolean hasErrors = false;
 
         if (isBlocked) {
-            System.out.println("Кофе-машина заблокированна");
+            System.out.println("Кофе-машина заблокированна:(");
             hasErrors = true;
         }
 

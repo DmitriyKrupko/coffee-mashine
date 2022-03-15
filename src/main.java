@@ -29,6 +29,7 @@ public class main {
 
         if (!coffeeIsEnough) {
             System.out.println("Кофе недостаточно");
+            System.out.println("Засыпь кофе, придурок");
             hasErrors = true;
         }
 
